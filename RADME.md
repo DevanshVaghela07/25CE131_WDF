@@ -1,4 +1,3 @@
-This is the portal to help the students to login , 
 
 # StudentHub Portal - Project Documentation
 
