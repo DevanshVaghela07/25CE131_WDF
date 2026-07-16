@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Sign Up</title>
+</head>
+<body>
+    <h1>StudentHub Portal - Sign Up</h1>
+    
+    <form method="POST" action="/signup">
+        <div>
+            <label for="student_id">Student ID:</label><br>
+            <input type="text" id="student_id" name="student_id" required>
+        </div>
+        
+        <div>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div>
+            <label for="department">Department:</label><br>
+            <input type="text" id="department" name="department" required>
+        </div>
+        
+        <div>
+            <label for="email">Email ID:</label><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+        
+        <button type="submit">Submit</button></div><br>
+    </form>
+
+    <form action="Home.html" method="get">
+        <button type="submit">Back to Home</button>
+    </form>
+</body>
+</html>
