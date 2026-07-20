@@ -5,62 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub Portal - Results</title>
-        <a href="Profile.html">
-            <img src="student.png" height="100" width="100" alt="Student">
-        </a>
-    </header>
+    <link rel="stylesheet" href="CSS\result.css">
+</head>
 
-    <main>
-        <section>
-            <h2>Results</h2>
-        </section>
-            <table border="1">
-                <caption>Semester result percentages for listed courses</caption>
-                <thead>
-                    <tr>
-                        <th>Course</th>
-                        <th>Percentage</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>B.Tech Computer Engineering</td>
-                        <td>88%</td>
-                    </tr>
-                    <tr>
-                        <td>B.Tech Civil Engineering</td>
-                        <td>82%</td>
-                    </tr>
-                    <tr>
-                        <td>B.Tech Mechanical Engineering</td>
-                        <td>84%</td>
-                    </tr>
-                    <tr>
-                        <td>B.Tech Electrical Engineering</td>
-                        <td>80%</td>
-                    </tr>
-                    <tr>
-                        <td>MBA</td>
-                        <td>78%</td>
-                    </tr>
-                    <tr>
-                        <td>MCA</td>
-                        <td>81%</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="result-info">
-                <p><a href="courses.html">View Courses</a></p>
-                <form action="Home.html" method="get">
-                    <button type="submit">Back to Home</button>
-                </form>
-            </div>
-        </section>
-    </main>
+<header>
+    <a href="Profile.html">
+        <img src="student.png" height="100" width="100" alt="Student">
+    </a>
+</header>
 
-    <footer>
-        <p>&copy; 2026 StudentHub. All rights reserved.</p>
-    </footer>
+<body>
+    <section>
+    <table border="2" style="border-color: black;" cellpadding="10">
+        <caption><strong><h3>Semester result percentages for listed courses</h3></strong></caption>
+        <tr>
+            <th>Course</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>B.Tech Computer Engineering</td>
+            <td>88%</td>
+        </tr>
+        <tr>
+            <td>B.Tech Civil Engineering</td>
+            <td>82%</td>
+        </tr>
+        <tr>
+            <td>B.Tech Mechanical Engineering</td>
+            <td>84%</td>
+        </tr>
+        <tr>
+            <td>B.Tech Electrical Engineering</td>
+            <td>80%</td>
+        </tr>
+        <tr>
+            <td>MBA</td>
+            <td>78%</td>
+        </tr>
+        <tr>
+            <td>MCA</td>
+            <td>81%</td>
+        </tr>
+    </table>
+
+    </section>
+
+    <p><a href="courses.html">View Courses</a></p>
+    <button class="button-back" onclick="window.location.href='Home.html'">← Back to Home</button>
 </body>
+
+<footer>
+    <p>&copy; 2026 StudentHub. All rights reserved.</p>
+</footer>
 
 </html>

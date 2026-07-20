@@ -5,64 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - StudentHub Portal</title>
+    <link rel="Stylesheet" href="CSS/Contact.css">
 </head>
 
 <header>
     <a href="Profile.html">
-        <img src="student.png" alt="student">
+        <img src="student.png" height="100" width="100" alt="student">
     </a>
     <h2> Welcome to StudentHub portal </h2>
 </header>
 
 <body>
-    <main>
-        <section class="card">
-            <h3>Contact Us</h3>
-            <p>If you have questions, feedback, or need support, please use the form below to reach the StudentHub team.
-                We'll respond as soon as possible.</p>
-            <div class="contact-grid">
-                <div>
-                    <form action="#" method="post" onsubmit="alert('Message submitted (demo)'); return false;">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
+    <section class="card">
 
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
+        <h3>Contact Us</h3>
+        <p>If you have questions, feedback, or need support, please use the form below to reach the StudentHub team.
+            We'll respond as soon as possible.</p>
 
-                        <label for="topic">Topic</label>
-                        <select id="topic" name="topic">
-                            <option>General Inquiry</option>
-                            <option>Support</option>
-                            <option>Courses</option>
-                            <option>Partnerships</option>
-                        </select>
+        <form action="#" method="post">
 
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
+            <label for="name">Full Name: </label>
+            <input type="text" id="name" name="name" required><br><br>
 
-                        <div>
-                            <button type="submit">Send Message</button>
-                        </div>
-                    </form>
-                </div>
+            <label for="email">Email Address: </label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
 
-                <div>
-                    <div>
-                        <h4>Get in touch</h4>
-                        <p><strong>Address:</strong> The U and P.U. Patel Department of Computer Engineering of
-                            CHARUSAT, Changa, Anand District, Gujarat 388421, India</p>
-                        <p>Office Hours: Mon - Fri, 9:00 AM - 6:00 PM</p>
-                    </div>
+            <label for="topic">Topic: </label>
+            <select id="topic" name="topic">
+                <option>General Inquiry</option>
+                <option>Support</option>
+                <option>Courses</option>
+                <option>Partnerships</option>
+            </select>
+            <br>
+            <br>
 
-                    <div>
-                        <h4>Follow Us</h4>
-                        <p>Twitter • Instagram • LinkedIn</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <button onclick="window.location.href='Home.html'">← Back to Home</button>
-    </main>
+            <label for="message">Message: </label><br><textarea id="message" name="message" required></textarea>
+            <br>
+            <br>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+        <h2>Get in touch</h2>
+
+        <p><strong>Address:</strong> The U and P.U. Patel Department of Computer Engineering of
+            CHARUSAT, Changa, Anand District, Gujarat 388421, India</p>
+        <p>Office Hours: Mon - Fri, 9:00 AM - 6:00 PM</p>
+
+        <h4>Follow Us</h4>
+        <p>Twitter • Instagram • LinkedIn</p>
+
+    </section>
+    <button class="button-back" onclick="window.location.href='Home.html'">← Back to Home</button>
+
 </body>
 
 <footer>

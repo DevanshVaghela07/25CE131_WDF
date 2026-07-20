@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub - Sign Up</title>
+    <link rel="Stylesheet" href="CSS\signup.css">
 </head>
+
+<header>
+    <a href="Profile.html">
+        <img src="student.png" height="100" width="100" alt="Student">
+    </a>
+    <h2 style="color: black;">StudentHub Portal - Sign Up</h2>
+</header>
+
 <body>
-    <h1>StudentHub Portal - Sign Up</h1>
-    
-    <form method="POST" action="/signup">
-        <div>
-            <label for="student_id">Student ID:</label><br>
-            <input type="text" id="student_id" name="student_id" required>
-        </div>
-        
-        <div>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required>
-        </div>
-        
-        <div>
-            <label for="department">Department:</label><br>
-            <input type="text" id="department" name="department" required>
-        </div>
-        
-        <div>
-            <label for="email">Email ID:</label><br>
-            <input type="email" id="email" name="email" required>
-        </div>
-        
-        <div>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <br>
-        
-        <button type="submit">Submit</button></div><br>
-    </form>
 
     <form action="Home.html" method="get">
-        <button type="submit">Back to Home</button>
+        <label for="student_id">Student ID:</label><br>
+        <input type="text" id="student_id" name="student_id" required>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" pattern="[a-zA-Z]+" required>
+
+        <label for="department">Department:</label><br>
+        <input type="text" id="department" name="department" pattern="[a-zA-Z]+" required>
+
+        <label for="email">Email ID:</label><br>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <button type="submit">Submit</button><br>
     </form>
+    <button class="button-back" onclick="window.location.href='Home.html'">← Back to Home</button>
+    <br><br>
 </body>
+
+<footer>
+    <p>&copy; 2026 StudentHub. All rights reserved.</p>
+</footer>
+
 </html>
