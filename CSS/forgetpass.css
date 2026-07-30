@@ -11,6 +11,30 @@ header {
     padding: 1rem;
 }
 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    display: inline-block;
+    transition-delay: 0.1s;
+}
+
+nav ul li a:hover {
+    background-color: #fcf9f965;
+    border-radius: 8px;
+}
+
 section {
     padding: 10px;
     margin: 0;
