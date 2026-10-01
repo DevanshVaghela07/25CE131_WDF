@@ -21,6 +21,7 @@ nav ul {
 {
     display: block;
     background-color: #f0f2f3;
+    border-radius: 8px;
 }
 
 nav ul li {

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style rel="stylesheet" href="../CSS/registration.css">
+    </style>
+</head>
+
+<header>
+    <a href="Profile.html">
+        <img src="student.png" height="100" width="100" alt="Student">
+    </a>
+    <h2 style="color: black;">StudentHub Portal - Sign Up</h2>
+
+    <nav>
+        <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="announcement.html">Announcements</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="calender.html">Calendar</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="registration.html" id="registration">Register</a></li>
+            <li><a href="result.html">Results</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <fieldset>
+        <legend>Registration Form</legend>
+    <form action="" method="get" id="form">
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" id="firstname" placeholder="Enter your first name" required><span id="s"></span></td>
+            </tr>
+            <br>
+
+            <tr>
+                <td>Middle Name:</td>
+                <td><input type="text" id="middlename" placeholder="Enter your middle name"><span id="m"></span></td>
+            </tr>
+            <br>
+
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" id="lastname" placeholder="Enter your last name" required><span id="l"></span></td>
+            </tr>
+            <br>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" id="email" placeholder="Enter your email" required></td>
+            </tr>
+            <br>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="password" placeholder="Enter your password" required>
+                </td>
+            </tr>
+            <br>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="checkbox1" name="gender" value="male">
+                    <label>Male</label>
+                    <input type="radio" id="checkbox2" name="gender" value="female">
+                    <label>Female</label>
+                </td>
+            </tr>
+            <br>
+
+            <tr>
+                <td>Contact Number:</td>
+                <td><input type="text" id="phone" placeholder="Enter your contact number"><span id="p"></span></td>
+            </tr>
+            <br>
+
+            <tr>
+                <td>Branch:</td>
+                <td><select id="branch" name="branch" size="1" required>
+                        <optgroup label="Select your branch">
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Electrical">Electrical</option>
+                            <option value="Mechanical">Mechanical</option>
+                    </select></td>
+            </tr>
+            <br>
+
+            <tr>
+                <td>Area of Interest:</td>
+                <td><select id="area_of_interest" name="area_of_interest" size="1" required>
+                        <optgroup label="Select your area of interest">
+                            <option value="Software Engineering">Software Engineering</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Cybersecurity">Cybersecurity</option>
+                            <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    </select></td>
+            </tr>
+            <br>
+
+            <tr>
+                <td>Address:</td>
+                <td><textarea id="address" name="address" placeholder="Enter your address" cols="30"
+                        rows="4"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="terms" name="terms" required>
+                    <label>I agree to the terms and conditions</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="interest" name="interest">
+                    <label for="interest">I am interested in receiving updates</label>
+                </td>
+            </tr>
+
+        </table>
+        <input type="submit" value="Submit" id="btn">
+
+    </form>
+    </fieldset>
+
+    <button class="button-back" onclick="window.location.href='Home.html'">← Back to Home</button>
+</body>
+
+<footer>
+    <p>&copy; 2026 StudentHub. All rights reserved.</p>
+</footer>
+
+</html>

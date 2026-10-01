@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - StudentHub Portal</title>
+  <link rel="stylesheet" href="../CSS/faq.css">
+</head>
+
+<header>
+  <a href="Profile.html">
+    <img src="student.png" height="100" width="100" alt="student">
+  </a>
+  <h2> StudentHub Portal - FAQ </h2>
+
+  <nav>
+    <ul>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="announcement.html">Announcements</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="faq.html" id="FAQ">FAQ</a></li>
+      <li><a href="calender.html">Calendar</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="registration.html">Register</a></li>
+      <li><a href="result.html">Results</a></li>
+      <li><a href="assignments.html">Assignments</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <main class="faq">
+    <h3>Frequently Asked Questions</h3>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="answer1">
+        <span>How do I reset my password?</span>
+        <span class="chev">▾</span>
+      </button>
+      <div id="answer1" class="faq-answer" role="region" aria-hidden="true">
+        <p>Use the "Forgot Password" link on the login page. Enter your registered email to receive a reset link.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="answer2">
+        <span>How can I view my course materials?</span>
+        <span class="chev">▾</span>
+      </button>
+      <div id="answer2" class="faq-answer" role="region" aria-hidden="true">
+        <p>Visit the Courses page after logging in. Select the course to see lectures, resources, and assignments.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="answer3">
+        <span>Where do I find announcements?</span>
+        <span class="chev">▾</span>
+      </button>
+      <div id="answer3" class="faq-answer" role="region" aria-hidden="true">
+        <p>Announcements are listed on the Announcements page and also appear on your Home dashboard after login.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="answer4">
+        <span>How do I contact support?</span>
+        <span class="chev">▾</span>
+      </button>
+      <div id="answer4" class="faq-answer" role="region" aria-hidden="true">
+        <p>Use the Contact Us page form or email the office. Office hours and address are on the Contact page.</p>
+      </div>
+    </div>
+
+    <p><button class="button-back" onclick="window.location.href='Home.html'">← Back to Home</button></p>
+  </main>
+
+  <script src="../JS/faq.js"></script>
+</body>
+
+<footer>
+  <p>&copy; 2026 StudentHub. All rights reserved.</p>
+</footer>
+
+</html>
