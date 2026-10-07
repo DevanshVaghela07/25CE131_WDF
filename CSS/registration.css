@@ -54,6 +54,20 @@ label {
 	margin: 0.85rem 0.4rem;
 }
 
+.gender label {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.checkbox label {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"] {
