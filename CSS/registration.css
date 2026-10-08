@@ -45,6 +45,11 @@ nav ul li a:hover {
 form {
 	margin: 2rem;
 	padding: 2rem;
+	max-width: 900px;
+}
+
+.field-group {
+    margin-bottom: 1.2rem;
 }
 
 label {
@@ -54,29 +59,58 @@ label {
 	margin: 0.85rem 0.4rem;
 }
 
-.gender label {
+.gender label,
+.checkbox label,
+.radio-option {
     display: inline-block;
     margin-right: 1rem;
     font-size: 0.95rem;
-    font-weight: 600;
-}
-
-.checkbox label {
-    display: inline-block;
-    margin-right: 1rem;
-    font-size: 0.95rem;
-    font-weight: 600;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
-	width: 1000px;
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    max-width: 1000px;
 	padding: 1rem;
 	border-radius: 10px;
-	border-color: #ffffff;
+	border: 1px solid #dfe3e8;
 	background: #ffffff;
 	font-size: 1rem;
+	box-sizing: border-box;
+}
+input[aria-invalid="true"],
+select[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border-color: #d93025;
+    box-shadow: 0 0 0 1px rgba(217, 48, 37, 0.15);
+}
+.error-message {
+    display: block;
+    color: #d93025;
+    font-size: 0.85rem;
+    min-height: 1.1rem;
+    margin-top: 0.35rem;
+}
+.initials {
+    display: inline-block;
+    min-width: 1.5rem;
+    font-weight: 700;
+    color: #0b5fa5;
+    margin-left: 0.5rem;
+}
+.form-status {
+    margin: 1rem 0;
+    font-weight: 600;
+}
+.form-status.success {
+    color: #1e7e34;
+}
+.form-status.error {
+    color: #d93025;
 }
 
 .button-back {
@@ -86,6 +120,7 @@ input[type="password"] {
 	border-radius: 8px;
 	text-decoration: none;
 	cursor: pointer;
+	margin-left: 2rem;
 }
 
 .button-back:hover {

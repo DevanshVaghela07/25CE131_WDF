@@ -4,94 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>StudentHub Portal - Registration</title>
     <link rel="stylesheet" href="../CSS/registration.css">
+    <link rel="stylesheet" href="../CSS/interactions.css">
 </head>
 
-<header>
-    <a href="Profile.html">
-        <img src="student.png" height="100" width="100" alt="Student">
-    </a>
-    <h2 style="color: black;">StudentHub Portal - Sign Up</h2>
-
-    <nav>
-        <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="announcement.html">Announcements</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="calender.html">Calendar</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="registration.html" id="registration">Register</a></li>
-            <li><a href="result.html">Results</a></li>
-            <li><a href="assignments.html">Assignments</a></li>
-        </ul>
-    </nav>
-</header>
-
 <body>
-    <form action="" method="get" id="form">
-        <div>
+
+    <header>
+        <a href="Profile.html">
+            <img src="student.png" height="100" width="100" alt="Student">
+        </a>
+        <h2 style="color: black;">StudentHub Portal - Sign Up</h2>
+
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="announcement.html">Announcements</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="calender.html">Calendar</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="registration.html" id="registration">Register</a></li>
+                <li><a href="result.html">Results</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="" method="get" id="form" novalidate>
+        <div class="field-group">
             <label for="firstname">First Name:</label>
-            <input type="text" id="firstname" placeholder="Enter your first name" required><span id="s"></span>
+            <input type="text" id="firstname" placeholder="Enter your first name" required>
+            <span id="s" class="initials" aria-live="polite"></span>
+            <span id="firstnameError" class="error-message" aria-live="polite"></span>
         </div>
 
-        <div>
+        <div class="field-group">
             <label for="middlename">Middle Name:</label>
-            <input type="text" id="middlename" placeholder="Enter your middle name"><span id="m"></span>
+            <input type="text" id="middlename" placeholder="Enter your middle name">
+            <span id="m" class="initials" aria-live="polite"></span>
+            <span id="middlenameError" class="error-message" aria-live="polite"></span>
         </div>
 
-        <div>
+        <div class="field-group">
             <label for="lastname">Last Name:</label>
-            <input type="text" id="lastname" placeholder="Enter your last name" required><span id="l"></span>
+            <input type="text" id="lastname" placeholder="Enter your last name" required>
+            <span id="l" class="initials" aria-live="polite"></span>
+            <span id="lastnameError" class="error-message" aria-live="polite"></span>
         </div>
 
-        <div>
-            <label for="id">Student ID:</label>
-            <input type="text" id="id" placeholder="Enter your student ID" required>
+        <div class="field-group">
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" placeholder="Enter your student ID" required>
+            <span id="studentIdError" class="error-message" aria-live="polite"></span>
         </div>
-        <div>
+
+        <div class="field-group">
             <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="email" id="email" placeholder="Enter your email" autocomplete="email" required>
+            <span id="emailError" class="error-message" aria-live="polite"></span>
         </div>
 
-        <div>
+        <div class="field-group">
             <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="Enter your password" required>
+            <input type="password" id="password" placeholder="Enter your password" autocomplete="new-password" required>
+            <span id="passwordError" class="error-message" aria-live="polite"></span>
+        </div>
+        <div class="field-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" placeholder="Re-enter your password" autocomplete="new-password" required>
+            <span id="confirmPasswordError" class="error-message" aria-live="polite"></span>
         </div>
 
-        <div class="gender">
+        <div class="field-group gender">
             <label>Gender:</label>
-            <label for="checkbox1">Male</label><input type="radio" id="checkbox1" name="gender" value="male">
-            <label for="checkbox2">Female</label><input type="radio" id="checkbox2" name="gender" value="female">
+            <label for="male" class="radio-option"><input type="radio" id="male" name="gender" value="male"> Male</label>
+            <label for="female" class="radio-option"><input type="radio" id="female" name="gender" value="female"> Female</label>
+            <span id="genderError" class="error-message" aria-live="polite"></span>
         </div>
 
-        <div>
+        <div class="field-group">
             <label for="phone">Contact Number:</label>
-            <input type="text" id="phone" placeholder="Enter your contact number"><span id="p"></span>
+            <input type="tel" id="phone" placeholder="Enter your contact number" inputmode="numeric" maxlength="10" required>
+            <span id="p" class="initials" aria-live="polite"></span>
+            <span id="phoneError" class="error-message" aria-live="polite"></span>
         </div>
 
-        <div>
-            <label for="branch">Branch:</label>
-            <select id="branch" name="branch" size="1" required>
+        <div class="field-group">
+            <label for="course">Course:</label>
+            <select id="course" name="course" size="1" required>
                 <option value="Computer Science">Computer Science</option>
                 <option value="Information Technology">Information Technology</option>
                 <option value="Electrical">Electrical</option>
                 <option value="Mechanical">Mechanical</option>
             </select>
+            <span id="courseError" class="error-message" aria-live="polite"></span>
         </div>
 
-        <div>
-            <label for="area_of_interest">Area of Interest:</label>
-            <select id="area_of_interest" name="area_of_interest" size="1" required>
-                <option value="Software Engineering">Software Engineering</option>
-                <option value="Data Science">Data Science</option>
-                <option value="Cybersecurity">Cybersecurity</option>
-                <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <div class="field-group">
+            <label for="year">Year:</label>
+            <select id="year" name="year" size="1" required>
+                <option value="">Select a year</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
             </select>
+            <span id="yearError" class="error-message" aria-live="polite"></span>
         </div>
 
-        <div>
+        <div class="field-group">
             <label for="address">Address:</label>
             <textarea id="address" name="address" placeholder="Enter your address" cols="30" rows="4"></textarea>
         </div>
@@ -99,6 +122,7 @@
         <div class="checkbox">
             <input type="checkbox" id="terms" name="terms" required>
             <label for="terms">I agree to the terms and conditions</label>
+            <span id="termsError" class="error-message" aria-live="polite"></span>
         </div>
 
         <div class="checkbox">
@@ -106,10 +130,12 @@
             <label for="interest">I am interested in receiving updates</label>
         </div>
 
-        <input type="submit" value="Submit" id="btn">
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+        <input type="submit" value="Register" id="btn">
     </form>
     <button class="button-back" onclick="window.location.href='Home.html'">← Back to Home</button>
-    <script src="../JS/registration.js"></script>
+    <script src="../JS/Registration.js"></script>
+    <script src="../JS/interactions.js" defer></script>
 </body>
 
 <footer>
